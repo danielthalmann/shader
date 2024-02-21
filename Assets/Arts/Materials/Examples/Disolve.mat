@@ -128,14 +128,14 @@ Material:
     - _BUMP_MAP_STRENGTH: 0.3
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _Cutoff_Height: 0.28
+    - _Cutoff_Height: 0.9435459
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EMISSION_WEIGHT: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Glow_Thickness: 0.058
+    - _Glow_Thickness: 0
     - _METALNESS: 0
     - _Metallic: 0
     - _Mode: 0

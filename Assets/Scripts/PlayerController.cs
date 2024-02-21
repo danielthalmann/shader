@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public Camera playerCamera = null;
 
     public Rigidbody player = null;
+
+    public bool useForce = false;
     
     // Start is called before the first frame update
     void Start()
@@ -41,15 +43,15 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = playerCamera.transform.forward.normalized * move.y + playerCamera.transform.right.normalized * move.x;
         movement.y = 0;
 
-        if (true)
+        if (useForce)
         {
             
-            movement = movement * speed / 100;
-            transform.position += movement;
+            player.AddForce(movement * speed, ForceMode.Force);
 
         } else
         {
-            player.AddForce(movement * speed, ForceMode.Force);
+            movement = movement * speed / 100;
+            transform.position += movement;
         }
 
         if (Input.GetButtonDown("Jump")) 
