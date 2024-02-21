@@ -40,16 +40,23 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = playerCamera.transform.forward.normalized * move.y + playerCamera.transform.right.normalized * move.x;
         movement.y = 0;
-        //  Vector3 movement = new Vector3(move.x, 0f, move.y);
-        // movement = movement * speed;
-        //transform.position += movement;
+
+        if (true)
+        {
+            
+            movement = movement * speed / 100;
+            transform.position += movement;
+
+        } else
+        {
+            player.AddForce(movement * speed, ForceMode.Force);
+        }
 
         if (Input.GetButtonDown("Jump")) 
         {
             player.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
 
-        player.AddForce(movement * speed, ForceMode.Force);
 
 
     }
