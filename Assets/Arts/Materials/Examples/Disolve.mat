@@ -128,7 +128,7 @@ Material:
     - _BUMP_MAP_STRENGTH: 0.3
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _Cutoff_Height: 0.9435459
+    - _Cutoff_Height: 0.10309193
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EMISSION_WEIGHT: 1
